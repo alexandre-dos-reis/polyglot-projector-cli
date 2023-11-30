@@ -1,1 +1,0 @@
-/Users/alexandre/dev/projector-cli/rust/target/debug/projector: /Users/alexandre/dev/projector-cli/rust/src/bin/projector.rs /Users/alexandre/dev/projector-cli/rust/src/lib.rs /Users/alexandre/dev/projector-cli/rust/src/opts.rs
