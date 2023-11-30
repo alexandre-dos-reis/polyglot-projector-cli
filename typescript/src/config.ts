@@ -1,5 +1,5 @@
 import { Opts } from "./opts";
-import path from "path";
+import * as path from "path";
 
 export enum Operation {
   Print,
@@ -78,11 +78,11 @@ function getOperation(opts: Opts): Operation {
     return Operation.Print;
   }
 
-  if (opts[0] === "add") {
+  if (opts.args[0] === "add") {
     return Operation.Add;
   }
 
-  if (opts[0] === "rm") {
+  if (opts.args[0] === "rm") {
     return Operation.Remove;
   }
 

@@ -1,16 +1,16 @@
-package config
+package lib
 
 import (
 	"github.com/hellflame/argparse"
 )
 
-type Otps struct {
+type Opts struct {
 	Args   []string
 	Config string
 	Pwd    string
 }
 
-func GetOtps() (*Otps, error) {
+func GetOtps() (*Opts, error) {
 	parser := argparse.NewParser("projector", "gets all the values", &argparse.ParserConfig{
 		DisableDefaultShowHelp: true,
 	})
@@ -36,7 +36,7 @@ func GetOtps() (*Otps, error) {
 		return nil, err
 	}
 
-	return &Otps{
+	return &Opts{
 		Args:   *args,
 		Config: *config,
 		Pwd:    *pwd,
